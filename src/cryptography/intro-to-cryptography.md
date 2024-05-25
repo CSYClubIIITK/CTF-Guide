@@ -2,7 +2,7 @@
 description: Basics of cryptography and cryptoanalysis
 ---
 
-# Into to Cryptography
+# Intro to Cryptography
 
 ### Cryptography
 

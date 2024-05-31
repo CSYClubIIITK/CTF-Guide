@@ -9,9 +9,7 @@ Welcome, to CTF Guide.
 These are the categories that we are going to cover in this Guidebook.
 
 1. Forensics
-2. Web Exploitation
-3. Cryptography
+2. [Web Exploitation](web-exploitation/intro-to-sqli/README.md)
+3. [Cryptography](cryptography/intro-to-cryptography.md)
 4. Reverse Engineering
 5. Binary Exploitation
-
-<p align=center><b>Follow Cyber Security Club IIIT Kottayam - <a href="https://linktr.ee/csyclub_iiitk">Social Handles</a></b></p>

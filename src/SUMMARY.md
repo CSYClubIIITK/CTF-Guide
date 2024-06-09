@@ -21,5 +21,5 @@
 * [File Upload Vulnerabilities](web-exploitation/file-upload-vulnerabilities/README.md)
   * [Content type restrictions](web-exploitation/file-upload-vulnerabilities/content-type-restrictions.md)
   * [insufficient blacklisting](web-exploitation/file-upload-vulnerabilities/insufficient-blacklisting.md)
-  * [Obfuscating File Extensions](web-exploitation/file-upload-vulnerabilities/Obfuscating-File-Extensions.md)
+  * [Obfuscating File Extensions](web-exploitation/file-upload-vulnerabilities/obfuscating-file-extensions.md)
   * [Unrestricted file uploads](web-exploitation/file-upload-vulnerabilities/Unrestricted-file-upload.md)

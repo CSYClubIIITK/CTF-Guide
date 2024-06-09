@@ -18,3 +18,8 @@
   * [Time-Based Blind Injections](web-exploitation/intro-to-sqli/time-based-blind-injections.md)
   * [Error Based Injections](web-exploitation/intro-to-sqli/error-based-injections.md)
   * [Second Order Injections](web-exploitation/intro-to-sqli/second-order-injections.md)
+* [File Upload Vulnerabilities](web-exploitation/file-upload-vulnerabilities/README.md)
+  * [Content type restrictions](web-exploitation/file-upload-vulnerabilities/content-type-restrictions.md)
+  * [insufficient blacklisting](web-exploitation/file-upload-vulnerabilities/insufficient-blacklisting.md)
+  * [Obfuscating-File-Extensions](web-exploitation/file-upload-vulnerabilities/Obfuscating-File-Extensions.md)
+  * [Unrestricted file uploads](web-exploitation/file-upload-vulnerabilities/Unrestricted-file-upload.md)

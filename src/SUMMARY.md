@@ -23,3 +23,15 @@
   * [insufficient blacklisting](web-exploitation/file-upload-vulnerabilities/insufficient-blacklisting.md)
   * [Obfuscating File Extensions](web-exploitation/file-upload-vulnerabilities/obfuscating-file-extensions.md)
   * [Unrestricted file uploads](web-exploitation/file-upload-vulnerabilities/Unrestricted-file-upload.md)
+
+## Forensics
+
+* [Introduction to Forensics](forensics/introduction-to-forensics.md)
+* [General](forensics/general.md)
+* [Steganography](forensics/steganography.md)
+* [Forensic Platforms](forensics/forensic-platforms.md)
+* [Conclusion](forensics/conclusion.md)
+
+***
+
+* [Page](page.md)

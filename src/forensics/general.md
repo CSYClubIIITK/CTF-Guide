@@ -1,6 +1,8 @@
 # General
 
-1\. Begin with identifying the type of file. At times we may need to know what kind of file we are dealing with. Use the file command to identify your file.
+### File
+
+&#x20;Begin with identifying the type of file. At times we may need to know what kind of file we are dealing with. Use the file command to identify your file.
 
 &#x20;                           Syntax:  file \[options] filename
 
@@ -16,7 +18,9 @@
 
 
 
-2\. Analyzing the file type alone will not give us any leads to go about further.  We can make use&#x20;
+### Strings
+
+&#x20;Analyzing the file type alone will not give us any leads to go about further.  We can make use&#x20;
 
 of the strings command to print human readable characters hidden within the file(binary   files mostly).&#x20;
 
@@ -34,7 +38,9 @@ The strings command quickly extracts embedded data, flags or sometimes the    in
 
 &#x20;                            \-e \<encoding> (Select character encoding)
 
-3\. To get details about the metadata we can use exiftool. It helps understanding the data in hand. Sometimes, we get flags just by using this command.&#x20;
+### Exiftool
+
+To get details about the metadata we can use exiftool. It helps understanding the data in hand. Sometimes, we get flags just by using this command.&#x20;
 
 &#x20;            Syntax: exiftool \[OPTIONS] FILE
 
@@ -49,7 +55,9 @@ The strings command quickly extracts embedded data, flags or sometimes the    in
 &#x20;                              \-gps:all (Extract all GPS information.)\
 
 
-4\. Another alternative option to the exiftool to analyze the data is binwalk.&#x20;
+### Binwalk
+
+Another alternative option to the exiftool to analyze the data is binwalk.&#x20;
 
 It can extract data embedded within files like firmware images, executable and disc images.&#x20;
 

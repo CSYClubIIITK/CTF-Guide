@@ -1,6 +1,6 @@
 # Forensic Platforms
 
-13\. Above we have explored techniques for image and audio files. Now we shall see how to investigate artifacts from a disk image. We shall briefly cover the uses of Autopsy toll to perform analysis on disc images.  We will be using the Windows OS for this section.
+&#x20;Above we have explored techniques for image and audio files. Now we shall see how to investigate artifacts from a disk image. We shall briefly cover the uses of Autopsy toll to perform analysis on disc images.  We will be using the Windows OS for this section.
 
 ### AUTOPSY&#x20;
 

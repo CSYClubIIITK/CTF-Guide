@@ -1,6 +1,8 @@
 # Steganography
 
-5\. At times when Steganography is used we may use Steghide to conceal data but the command can be modified to be able to crack the data concealed.&#x20;
+### Steghide
+
+&#x20;At times when Steganography is used we may use Steghide to conceal data but the command can be modified to be able to crack the data concealed.&#x20;
 
 &#x20;                        Syntax:    steghide extract -sf FILE
 
@@ -8,13 +10,17 @@
 
 &#x20;                        Embed data: steghide embed -cf cover\_image.jpg -ef hidden\_file.txt
 
-6\. For an image, finding metadata can be difficult. Data concealed can be retrieved by using the stegsolve command.  This Steganographic tool helps us to analyze the color and bit plane of the image, manipulate pixels, identify discrepancies, image overlay&#x20;
+### Stegsolve
+
+&#x20;For an image, finding metadata can be difficult. Data concealed can be retrieved by using the stegsolve command.  This Steganographic tool helps us to analyze the color and bit plane of the image, manipulate pixels, identify discrepancies, image overlay&#x20;
 
 &#x20;                         Syntax:  java -jar filename.jar
 
 &#x20;                          Download the Stegsolve JAR file.
 
-7\. Another such tool is Zsteg. It is powerful in analyzing png and bmp files
+### Zsteg
+
+Another such tool is Zsteg. It is powerful in analyzing png and bmp files
 
 &#x20;                           Syntax:   zsteg \[OPTIONS] FILE(S)
 
@@ -68,9 +74,9 @@ And when we open it, there we have our flag!&#x20;
 
 
 
-8\. Using OpenStego:
 
-&#x20; &#x20;
+
+### Openstego
 
 | Command    | openstego \[OPTIONS]                                |
 | ---------- | --------------------------------------------------- |
@@ -79,7 +85,9 @@ And when we open it, there we have our flag!&#x20;
 
 
 
-9\.  All the techniques discussed until now involved the use of image files. What if we are given an audio file? One way to go about it is using DeepSound. It is a tool for windows that allow us to both hide and extract data. For our use we are only concerned with data extraction.&#x20;
+### DeepSound
+
+All the techniques discussed until now involved the use of image files. What if we are given an audio file? One way to go about it is using DeepSound. It is a tool for windows that allow us to both hide and extract data. For our use we are only concerned with data extraction.&#x20;
 
 Install DeepSound in your windows system by visiting their official website by following the onscreen instructions.&#x20;
 
@@ -91,7 +99,7 @@ Thereafter simply click on the 'Extract Secret Files' button. If there is any da
 
 
 
-10. Using StegoSuite:
+### StegSuite
 
 | Command                        | java -jar StegoSuite.jar                                      |
 | ------------------------------ | ------------------------------------------------------------- |
@@ -99,20 +107,20 @@ Thereafter simply click on the 'Extract Secret Files' button. If there is any da
 
 
 
-11\. Using OutGuess:
+### OutGuess
 
 | Command                   | outguess -d hidden.txt -r cover.jpg               |
 | ------------------------- | ------------------------------------------------- |
 |                   Install |                 sudo apt-get install outguess     |
 |             Embed Data    |               outguess -d hidden.txt -r cover.jpg |
 
-### &#x20;Cracking Passwords
+###
 
-
+## Cracking Passwords
 
 Cracking passwords can come handy when the given files are password protected. In such a case accessing files is only possible once we crack the password. The following commands help us crack passwords
 
-12\. John the Ripper
+### John the Ripper
 
 It is a popular password cracking tool which can auto detect encryption for common formats.  It saves a lot of time and finds the correct tool to crack passwords.
 

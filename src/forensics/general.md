@@ -16,7 +16,7 @@
 
 &#x20;                                            \`-s\` (special files): Read block or character special files.
 
-
+There are cases where we may be given a file with a certain extension (eg: jpg), to look for its authenticity you may use the file command. Any inconsistencies found will mean a corrupt file. This can also be identified when you are unable to open the file. In such a cases the file signatures must be fixed. We will see this in a later example.&#x20;
 
 ### Strings
 

@@ -55,6 +55,8 @@ Downloading Wireshark is easy. Visit their website and download the installer as
 
 We will be using wireshark in the below example.
 
+Its highly recommended that you pay a visit to [https://www.wireshark.org/learn](https://www.wireshark.org/learn)
+
 #### WALKTHROUGH - WIRESHARK
 
 Wireshark doo dooo do (picoCTF): [https://play.picoctf.org/practice/challenge/115?category=4\&page=1](https://play.picoctf.org/practice/challenge/115?category=4\&page=1)

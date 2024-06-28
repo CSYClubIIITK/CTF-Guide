@@ -179,3 +179,28 @@ Go ahead and download the file given in the challenge.  Let us first analyse usi
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>file command on the gif file </p></figcaption></figure>
 
 See, although the extension is .gif its apparently not a gif file but a data file! This challenge involves fixing this file to gif! Lets see how to do that.&#x20;
+
+Two ways to approach this, you may use the bless command or the hex editors. I will be using [https://hexed.it/](https://hexed.it/) available online. To change the file header get a sample gif or  compare it from here
+
+{% embed url="https://www.file-recovery.com/gif-signature-format.htm" %}
+
+Open both files unopenable.gif and your sample on hexed. Comapare the file headers.&#x20;
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>unopenable.gif </p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>sample GIF</p></figcaption></figure>
+
+Do you see the header file GIF89a8. Make the same edit with the bytes on the unopenable.gif
+
+Right click on the first bytes and select the option insert bytes here and enter the number of bytes and value as follows.\
+
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Apply and download the new file. Now we can see the new GIF has our flag encrypted. Now use any online tool to split the gif into frames to retrieve our encrypted flag.&#x20;
+
+the flag is ZmxhZ3tn  MWZfb3  JfajFmfQ==
+
+The above encryption looks like Base64. Use any base64 decoder to get your flag.&#x20;
+
+You would get flag{g1f\_or\_j1f} after decryption.&#x20;

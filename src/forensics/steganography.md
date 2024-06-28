@@ -164,4 +164,18 @@ We begin by downloading the image and attempting all the commands we covered ini
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXfNWz\_Fml0gUyq0lKJ1qASFjvNg0S48OJ9Wa-ciJKsu9MWJ4WZp\_YfOf6Cp\_jwedMLClWyUX26JK-i1Axw2iBMCAuti8MPYiSqNMiC7SmsP-aRWPYjA-SJztqNmo7Sm32MsT5ucGvzuNHo9mCQoncApIdw?key=3tC4LW6BC-ghAujvhgrQ3Q)
 
-You can see the flag right at the top!&#x20;
+You can see the flag right at the top! \
+
+
+### Walkthrough 4 
+
+Remember, we talked about file headers in the beginning?  We will see an example to fix a corrupted file and get access to the flag.&#x20;
+
+\
+Corrupted File (CTFLearn): [https://ctflearn.com/challenge/138](https://ctflearn.com/challenge/138)
+
+Go ahead and download the file given in the challenge.  Let us first analyse using the file command.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>file command on the gif file </p></figcaption></figure>
+
+See, although the extension is .gif its apparently not a gif file but a data file! This challenge involves fixing this file to gif! Lets see how to do that.&#x20;

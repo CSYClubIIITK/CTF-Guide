@@ -77,6 +77,20 @@ It can extract data embedded within files like firmware images, executable and d
 
 &#x20;                                \-D ( Disassemble extracted code.)
 
+### xxd
+
+This is command is used when we need the files's contents hexadecimal format. This shows the binary content in a more readable form. It can be used to analyse file signatures even if file extensions have been changed or removed. It can also be used for data recovery by simply fixing the file header.&#x20;
+
+&#x20;               Syntax: xxd \[OPTIONS] FILE(S)
+
+&#x20;                Installation: sudo apt install xxd
+
+&#x20;                 Options: -r (Reverse a hexdump)
+
+&#x20;                                \-p ( Create plain hexdump and without ASCII representation)
+
+&#x20;                                \-c  (Specifying number of colums in the output)
+
 #### WALKTHROUGH 1
 
 We shall see an easy example

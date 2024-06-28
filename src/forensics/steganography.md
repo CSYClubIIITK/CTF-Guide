@@ -1,3 +1,7 @@
+---
+description: 'Author: Laav10 and Anupriya'
+---
+
 # Steganography
 
 ### Steghide
@@ -114,8 +118,6 @@ Thereafter simply click on the 'Extract Secret Files' button. If there is any da
 |                   Install |                 sudo apt-get install outguess     |
 |             Embed Data    |               outguess -d hidden.txt -r cover.jpg |
 
-###
-
 ## Cracking Passwords
 
 Cracking passwords can come handy when the given files are password protected. In such a case accessing files is only possible once we crack the password. The following commands help us crack passwords
@@ -180,7 +182,7 @@ Go ahead and download the file given in the challenge.  Let us first analyse usi
 
 See, although the extension is .gif its apparently not a gif file but a data file! This challenge involves fixing this file to gif! Lets see how to do that.&#x20;
 
-Two ways to approach this, you may use the bless command or the hex editors. I will be using [https://hexed.it/](https://hexed.it/) available online. To change the file header get a sample gif or  compare it from here
+Two ways to approach this, you may use the xxd command or the hex editors. I will be using [https://hexed.it/](https://hexed.it/) available online. To change the file header get a sample gif or  compare it from here
 
 {% embed url="https://www.file-recovery.com/gif-signature-format.htm" %}
 

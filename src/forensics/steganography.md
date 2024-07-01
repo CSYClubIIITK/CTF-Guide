@@ -1,6 +1,12 @@
+---
+description: 'Author: Laav10 and Anupriya'
+---
+
 # Steganography
 
-5\. At times when Steganography is used we may use Steghide to conceal data but the command can be modified to be able to crack the data concealed.&#x20;
+### Steghide
+
+&#x20;At times when Steganography is used we may use Steghide to conceal data but the command can be modified to be able to crack the data concealed.&#x20;
 
 &#x20;                        Syntax:    steghide extract -sf FILE
 
@@ -8,13 +14,17 @@
 
 &#x20;                        Embed data: steghide embed -cf cover\_image.jpg -ef hidden\_file.txt
 
-6\. For an image, finding metadata can be difficult. Data concealed can be retrieved by using the stegsolve command.  This Steganographic tool helps us to analyze the color and bit plane of the image, manipulate pixels, identify discrepancies, image overlay&#x20;
+### Stegsolve
+
+&#x20;For an image, finding metadata can be difficult. Data concealed can be retrieved by using the stegsolve command.  This Steganographic tool helps us to analyze the color and bit plane of the image, manipulate pixels, identify discrepancies, image overlay&#x20;
 
 &#x20;                         Syntax:  java -jar filename.jar
 
 &#x20;                          Download the Stegsolve JAR file.
 
-7\. Another such tool is Zsteg. It is powerful in analyzing png and bmp files
+### Zsteg
+
+Another such tool is Zsteg. It is powerful in analyzing png and bmp files
 
 &#x20;                           Syntax:   zsteg \[OPTIONS] FILE(S)
 
@@ -68,9 +78,7 @@ And when we open it, there we have our flag!&#x20;
 
 
 
-8\. Using OpenStego:
-
-&#x20; &#x20;
+### Openstego
 
 | Command    | openstego \[OPTIONS]                                |
 | ---------- | --------------------------------------------------- |
@@ -79,7 +87,9 @@ And when we open it, there we have our flag!&#x20;
 
 
 
-9\.  All the techniques discussed until now involved the use of image files. What if we are given an audio file? One way to go about it is using DeepSound. It is a tool for windows that allow us to both hide and extract data. For our use we are only concerned with data extraction.&#x20;
+### DeepSound
+
+All the techniques discussed until now involved the use of image files. What if we are given an audio file? One way to go about it is using DeepSound. It is a tool for windows that allow us to both hide and extract data. For our use we are only concerned with data extraction.&#x20;
 
 Install DeepSound in your windows system by visiting their official website by following the onscreen instructions.&#x20;
 
@@ -91,7 +101,7 @@ Thereafter simply click on the 'Extract Secret Files' button. If there is any da
 
 
 
-10. Using StegoSuite:
+### StegSuite
 
 | Command                        | java -jar StegoSuite.jar                                      |
 | ------------------------------ | ------------------------------------------------------------- |
@@ -99,20 +109,18 @@ Thereafter simply click on the 'Extract Secret Files' button. If there is any da
 
 
 
-11\. Using OutGuess:
+### OutGuess
 
 | Command                   | outguess -d hidden.txt -r cover.jpg               |
 | ------------------------- | ------------------------------------------------- |
 |                   Install |                 sudo apt-get install outguess     |
 |             Embed Data    |               outguess -d hidden.txt -r cover.jpg |
 
-### &#x20;Cracking Passwords
-
-
+## Cracking Passwords
 
 Cracking passwords can come handy when the given files are password protected. In such a case accessing files is only possible once we crack the password. The following commands help us crack passwords
 
-12\. John the Ripper
+### John the Ripper
 
 It is a popular password cracking tool which can auto detect encryption for common formats.  It saves a lot of time and finds the correct tool to crack passwords.
 
@@ -156,4 +164,43 @@ We begin by downloading the image and attempting all the commands we covered ini
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD\_4nXfNWz\_Fml0gUyq0lKJ1qASFjvNg0S48OJ9Wa-ciJKsu9MWJ4WZp\_YfOf6Cp\_jwedMLClWyUX26JK-i1Axw2iBMCAuti8MPYiSqNMiC7SmsP-aRWPYjA-SJztqNmo7Sm32MsT5ucGvzuNHo9mCQoncApIdw?key=3tC4LW6BC-ghAujvhgrQ3Q)
 
-You can see the flag right at the top!&#x20;
+You can see the flag right at the top! \
+
+
+### Walkthrough 4 
+
+Remember, we talked about file headers in the beginning?  We will see an example to fix a corrupted file and get access to the flag.&#x20;
+
+\
+Corrupted File (CTFLearn): [https://ctflearn.com/challenge/138](https://ctflearn.com/challenge/138)
+
+Go ahead and download the file given in the challenge.  Let us first analyse using the file command.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>file command on the gif file </p></figcaption></figure>
+
+See, although the extension is .gif its apparently not a gif file but a data file! This challenge involves fixing this file to gif! Lets see how to do that.&#x20;
+
+Two ways to approach this, you may use the xxd command or the hex editors. I will be using [https://hexed.it/](https://hexed.it/) available online. To change the file header get a sample gif or  compare it from here
+
+{% embed url="https://www.file-recovery.com/gif-signature-format.htm" %}
+
+Open both files unopenable.gif and your sample on hexed. Comapare the file headers.&#x20;
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>unopenable.gif </p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>sample GIF</p></figcaption></figure>
+
+Do you see the header file GIF89a8. Make the same edit with the bytes on the unopenable.gif
+
+Right click on the first bytes and select the option insert bytes here and enter the number of bytes and value as follows.\
+
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Apply and download the new file. Now we can see the new GIF has our flag encrypted. Now use any online tool to split the gif into frames to retrieve our encrypted flag.&#x20;
+
+the flag is ZmxhZ3tn  MWZfb3  JfajFmfQ==
+
+The above encryption looks like Base64. Use any base64 decoder to get your flag.&#x20;
+
+You would get flag{g1f\_or\_j1f} after decryption.&#x20;

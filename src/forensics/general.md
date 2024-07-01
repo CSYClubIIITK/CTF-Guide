@@ -1,6 +1,9 @@
 # General
 
-1\. Begin with identifying the type of file. At times we may need to know what kind of file we are dealing with. Use the file command to identify your file.
+### File
+
+&#x20;Begin with identifying the type of file. At times we may need to know what kind of file we are dealing with. Use the file command to identify your file.
+
 
 &#x20;                           Syntax:  file \[options] filename
 
@@ -14,9 +17,11 @@
 
 &#x20;                                            \`-s\` (special files): Read block or character special files.
 
+There are cases where we may be given a file with a certain extension (eg: jpg), to look for its authenticity you may use the file command. Any inconsistencies found will mean a corrupt file. This can also be identified when you are unable to open the file. In such a cases the file signatures must be fixed. We will see this in a later example.&#x20;
 
+### Strings
 
-2\. Analyzing the file type alone will not give us any leads to go about further.  We can make use&#x20;
+&#x20;Analyzing the file type alone will not give us any leads to go about further.  We can make use&#x20;
 
 of the strings command to print human readable characters hidden within the file(binary   files mostly).&#x20;
 
@@ -34,7 +39,9 @@ The strings command quickly extracts embedded data, flags or sometimes the    in
 
 &#x20;                            \-e \<encoding> (Select character encoding)
 
-3\. To get details about the metadata we can use exiftool. It helps understanding the data in hand. Sometimes, we get flags just by using this command.&#x20;
+### Exiftool
+
+To get details about the metadata we can use exiftool. It helps understanding the data in hand. Sometimes, we get flags just by using this command.&#x20;
 
 &#x20;            Syntax: exiftool \[OPTIONS] FILE
 
@@ -49,7 +56,9 @@ The strings command quickly extracts embedded data, flags or sometimes the    in
 &#x20;                              \-gps:all (Extract all GPS information.)\
 
 
-4\. Another alternative option to the exiftool to analyze the data is binwalk.&#x20;
+### Binwalk
+
+Another alternative option to the exiftool to analyze the data is binwalk.&#x20;
 
 It can extract data embedded within files like firmware images, executable and disc images.&#x20;
 
@@ -68,6 +77,20 @@ It can extract data embedded within files like firmware images, executable and d
 &#x20;                                \-l  (List all available extraction signatures.)
 
 &#x20;                                \-D ( Disassemble extracted code.)
+
+### xxd
+
+This is command is used when we need the files's contents hexadecimal format. This shows the binary content in a more readable form. It can be used to analyse file signatures even if file extensions have been changed or removed. It can also be used for data recovery by simply fixing the file header.&#x20;
+
+&#x20;               Syntax: xxd \[OPTIONS] FILE(S)
+
+&#x20;                Installation: sudo apt install xxd
+
+&#x20;                 Options: -r (Reverse a hexdump)
+
+&#x20;                                \-p ( Create plain hexdump and without ASCII representation)
+
+&#x20;                                \-c  (Specifying number of colums in the output)
 
 #### WALKTHROUGH 1
 

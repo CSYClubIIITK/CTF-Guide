@@ -1,6 +1,6 @@
 # Forensic Platforms
 
-13\. Above we have explored techniques for image and audio files. Now we shall see how to investigate artifacts from a disk image. We shall briefly cover the uses of Autopsy toll to perform analysis on disc images.  We will be using the Windows OS for this section.
+&#x20;Above we have explored techniques for image and audio files. Now we shall see how to investigate artifacts from a disk image. We shall briefly cover the uses of Autopsy toll to perform analysis on disc images.  We will be using the Windows OS for this section.
 
 ### AUTOPSY&#x20;
 
@@ -54,6 +54,8 @@ To familiarize yourself with wireshark ref: [https://ctf101.org/forensics/what-i
 Downloading Wireshark is easy. Visit their website and download the installer as per your OS.
 
 We will be using wireshark in the below example.
+
+Its highly recommended that you pay a visit to [https://www.wireshark.org/learn](https://www.wireshark.org/learn)
 
 #### WALKTHROUGH - WIRESHARK
 

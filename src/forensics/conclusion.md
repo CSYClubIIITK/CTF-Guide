@@ -14,6 +14,8 @@ The workflow sums up your approach to a challenge in a CTF.&#x20;
 
 Bi0s Steganography: [https://wiki.bi0s.in/steganography/roadmap/](https://wiki.bi0s.in/steganography/roadmap/)
 
+CTF101 Handbook: [https://ctf101.org/forensics/overview/](https://ctf101.org/forensics/overview/)
+
 CTFlearn:  [https://ctflearn.com/challenge/1/browse](https://ctflearn.com/challenge/1/browse)
 
 Hack The Box: [https://app.hackthebox.com/sherlocks?sort\_type=asc](https://app.hackthebox.com/sherlocks?sort\_type=asc)

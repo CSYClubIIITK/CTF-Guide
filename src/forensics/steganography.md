@@ -78,8 +78,6 @@ And when we open it, there we have our flag!&#x20;
 
 
 
-
-
 ### Openstego
 
 | Command    | openstego \[OPTIONS]                                |

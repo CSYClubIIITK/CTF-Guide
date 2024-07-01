@@ -4,6 +4,7 @@
 
 &#x20;Begin with identifying the type of file. At times we may need to know what kind of file we are dealing with. Use the file command to identify your file.
 
+
 &#x20;                           Syntax:  file \[options] filename
 
 &#x20;                           Options: \`-b\` (brief): Omit the filename in the output.
